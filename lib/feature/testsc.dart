@@ -14,7 +14,7 @@ class Testsc extends StatelessWidget {
       body: Column(
         children: [
           // إضافة صورة مع التأكد من أن الصورة تعمل بشكل صحيح
-          Image.asset(Assets.coreSplash),
+          Image.asset(Assets.coreSplashAndroid12),
           SizedBox(height: 20),  // زيادة المسافة بين الصورة والنص
 
           // تغيير اللون والتأكد من أن النص يظهر بوضوح
