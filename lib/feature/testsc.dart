@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/routes/app_route.dart';
 import 'package:store_app/core/style/fonts/font_family_helper.dart';
+import 'package:store_app/core/utils/context_extension.dart';
 import 'package:store_app/generated/assets.dart';
 
 class Testsc extends StatelessWidget {
@@ -14,31 +16,41 @@ class Testsc extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // إضافة صورة مع التأكد من أن الصورة تعمل بشكل صحيح
-          Image.asset(Assets.coreSplashAndroid12),
-          SizedBox(height: 20),  // زيادة المسافة بين الصورة والنص
-
-          // تغيير اللون والتأكد من أن النص يظهر بوضوح
-          Text(
-            'Test Screen',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold, // زيادة سماكة النص
-            ),
-          ),
-          SizedBox(height: 20),  // زيادة المسافة بين النصين
-          Text(
-            'نوع الخط',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              fontFamily: FontFamilyHelper.arabicFont,
-              // زيادة سماكة النص
-            ),
-          ),
-
+      TextButton(onPressed: (){
+        context.pushNamed(AppRoutes.test1);
+      }, child: Text('go to test 1')),
+      TextButton(onPressed: (){
+        context.pushNamed(AppRoutes.test2);
+      }, child: Text('go to test 2')),
         ],
       ),
     );
   }
 }
+class TestScr1 extends StatelessWidget {
+  const TestScr1({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('go1'),
+        leading: Icon(Icons.account_balance),
+      ),
+    );
+  }
+}
+class TestScr2 extends StatelessWidget {
+  const TestScr2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('go2'),
+        leading: Icon(Icons.account_balance),
+      ),
+    );
+  }
+}
+
