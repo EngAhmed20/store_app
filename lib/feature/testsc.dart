@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/style/fonts/font_family_helper.dart';
 import 'package:store_app/generated/assets.dart';
 
 class Testsc extends StatelessWidget {
@@ -22,11 +23,20 @@ class Testsc extends StatelessWidget {
             'Test Screen',
             style: TextStyle(
               fontSize: 24,
-              color: Colors.white,  // تغيير لون النص إلى الأبيض
-              backgroundColor: Colors.black,  // خلفية سوداء للنص
               fontWeight: FontWeight.bold, // زيادة سماكة النص
             ),
           ),
+          SizedBox(height: 20),  // زيادة المسافة بين النصين
+          Text(
+            'نوع الخط',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              fontFamily: FontFamilyHelper.arabicFont,
+              // زيادة سماكة النص
+            ),
+          ),
+
         ],
       ),
     );

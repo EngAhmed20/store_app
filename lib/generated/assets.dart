@@ -2,14 +2,22 @@
 class Assets {
   Assets._();
 
+  static const String cairoCairoBold = 'assets/fonts/arabic/cairo/Cairo-Bold.ttf';
+  static const String cairoCairoMedium = 'assets/fonts/arabic/cairo/Cairo-Medium.ttf';
+  static const String cairoCairoRegular = 'assets/fonts/arabic/cairo/Cairo-Regular.ttf';
   static const String coreEmptyScreen = 'assets/images/core/empty_screen.png';
   static const String coreNoNetwork = 'assets/images/core/no_network.jpg';
   static const String corePageUnderBuild = 'assets/images/core/page_under_build.jpg';
   static const String coreSplash = 'assets/images/core/splash.png';
+  static const String coreSplashAndroid11Ios = 'assets/images/core/splash_android11_ios.png';
   static const String coreSplashAndroid12 = 'assets/images/core/splash_android12.png';
-  static const String coreSplashAndroid11 = 'assets/images/core/splash_android11_ios.png';
+  //static const String flutterProjectsStoreApp.env = '.env.prod';
   static const String iconsAppIcon = 'assets/images/icons/app_icon.png';
   static const String iconsPlayStore512 = 'assets/images/icons/play_store_512.png';
   static const String imagesCoreSplash = 'assets/images/core/splash.png';
+  static const String poppinsPoppinsBold = 'assets/fonts/english/poppins/Poppins-Bold.ttf';
+  static const String poppinsPoppinsMedium = 'assets/fonts/english/poppins/Poppins-Medium.ttf';
+  static const String poppinsPoppinsRegular = 'assets/fonts/english/poppins/Poppins-Regular.ttf';
+  //static const String storeApp.env = '.env.dev';
 
 }
