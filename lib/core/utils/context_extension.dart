@@ -1,14 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:store_app/core/language/app_localizations.dart';
-import 'package:store_app/core/style/theme/app_color.dart';
+import 'package:store_app/core/style/theme/app_color_exten.dart';
+import 'package:store_app/core/style/theme/assets_extension.dart';
 
 extension ContextExt on BuildContext{
   //LANGUAGE
   String tr(String key) {
     return AppLocalizations.of(this)!.translate(key).toString();
   }
+  ///color
   AppColor get color=>Theme.of(this).extension<AppColor>()!;
+  ///assets
+  AppAssets get assets=>Theme.of(this).extension<AppAssets>()!;
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
    return Navigator.pushNamed(this, routeName, arguments: arguments);
   }

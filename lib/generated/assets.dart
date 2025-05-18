@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
 
+  static const String adminCategoriesDrawer = 'assets/images/admin/categories_drawer.png';
+  static const String adminDrawerImage = 'assets/images/admin/drawer_image.png';
+  static const String adminProductsDrawer = 'assets/images/admin/products_drawer.png';
+  static const String adminUsersDrawer = 'assets/images/admin/users_drawer.png';
   static const String cairoCairoBold = 'assets/fonts/arabic/cairo/Cairo-Bold.ttf';
   static const String cairoCairoMedium = 'assets/fonts/arabic/cairo/Cairo-Medium.ttf';
   static const String cairoCairoRegular = 'assets/fonts/arabic/cairo/Cairo-Regular.ttf';
@@ -11,13 +15,31 @@ class Assets {
   static const String coreSplash = 'assets/images/core/splash.png';
   static const String coreSplashAndroid11Ios = 'assets/images/core/splash_android11_ios.png';
   static const String coreSplashAndroid12 = 'assets/images/core/splash_android12.png';
-  //static const String flutterProjectsStoreApp.env = '.env.prod';
+  static const String customerBigNavBarDark = 'assets/images/customer/big_nav_bar_dark.png';
+  static const String customerBigNavBarLight = 'assets/images/customer/big_nav_bar_light.png';
+  static const String customerHomeBgDark = 'assets/images/customer/home_bg_dark.png';
+  static const String customerHomeBgLight = 'assets/images/customer/home_bg_light.png';
+  static const String customerUser = 'assets/images/customer/user.png';
   static const String iconsAppIcon = 'assets/images/icons/app_icon.png';
   static const String iconsPlayStore512 = 'assets/images/icons/play_store_512.png';
   static const String imagesCoreSplash = 'assets/images/core/splash.png';
+  static const String langAr = 'lang/ar.json';
+  static const String langEn = 'lang/en.json';
   static const String poppinsPoppinsBold = 'assets/fonts/english/poppins/Poppins-Bold.ttf';
   static const String poppinsPoppinsMedium = 'assets/fonts/english/poppins/Poppins-Medium.ttf';
   static const String poppinsPoppinsRegular = 'assets/fonts/english/poppins/Poppins-Regular.ttf';
-  //static const String storeApp.env = '.env.dev';
+  static const String svgArrowBack = 'assets/images/svg/arrow_back.svg';
+  static const String svgBuildDeveloper = 'assets/images/svg/build_developer.svg';
+  static const String svgBuildVersion = 'assets/images/svg/build_version.svg';
+  static const String svgCarShop = 'assets/images/svg/car_shop.svg';
+  static const String svgCategoriesTapIcon = 'assets/images/svg/categories_tap_icon.svg';
+  static const String svgDarkMode = 'assets/images/svg/dark_mode.svg';
+  static const String svgFavouriteTabIcon = 'assets/images/svg/favourite_tab_icon.svg';
+  static const String svgHomeTabIcon = 'assets/images/svg/home_tab_icon.svg';
+  static const String svgLanguage = 'assets/images/svg/language.svg';
+  static const String svgLogout = 'assets/images/svg/logout.svg';
+  static const String svgPlayStore512 = 'assets/images/svg/play_store_512.png';
+  static const String svgProfileTabIcon = 'assets/images/svg/profile_tab_icon.svg';
+  static const String svgSearch = 'assets/images/svg/search.svg';
 
 }
