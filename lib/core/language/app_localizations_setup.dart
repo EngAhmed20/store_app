@@ -1,7 +1,6 @@
-import 'package:asroo_store/core/language/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:store_app/core/language/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
 class AppLocalizationsSetup {
   static const Iterable<Locale> supportedLocales = [
     Locale('en'),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:store_app/core/app/connectivity_controller.dart';
+import 'package:store_app/core/language/app_localizations_setup.dart';
 import 'package:store_app/core/routes/app_route.dart';
+import 'package:store_app/core/style/theme/app_theme.dart';
 import 'package:store_app/core/utils/no_internet_scr.dart';
-import 'package:store_app/feature/testsc.dart';
 
 
 class StoreApp extends StatelessWidget {
@@ -19,11 +20,12 @@ class StoreApp extends StatelessWidget {
           minTextAdapt: true,
           child: MaterialApp(
             title: 'Store',
+            locale: Locale('en'),
+            supportedLocales:AppLocalizationsSetup.supportedLocales,
+            localeResolutionCallback: AppLocalizationsSetup.localeResolutionCallback,
+            localizationsDelegates: AppLocalizationsSetup.localizationsDelegates,
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-              useMaterial3: true,
-            ),
+            theme: appThemeLight(),
             onGenerateRoute: AppRoutes.onGenerateRoute,
             initialRoute: AppRoutes.test,
           ),

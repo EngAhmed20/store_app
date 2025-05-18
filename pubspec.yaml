@@ -19,6 +19,8 @@ dependencies:
   flutter_dotenv: ^5.2.1
   flutter_screenutil: ^5.9.3
   flutter_native_splash: ^2.4.6
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -46,6 +48,8 @@ flutter:
     - assets/images/core/
     - assets/images/icons/
     - assets/images/core/splash.png
+    - lang/ar.json
+    - lang/en.json
 
   fonts:
     - family: Cairo

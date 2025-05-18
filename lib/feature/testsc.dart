@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/language/lang_keys.dart';
 import 'package:store_app/core/routes/app_route.dart';
-import 'package:store_app/core/style/fonts/font_family_helper.dart';
 import 'package:store_app/core/utils/context_extension.dart';
-import 'package:store_app/generated/assets.dart';
 
 class Testsc extends StatelessWidget {
   const Testsc({super.key});
@@ -11,7 +10,7 @@ class Testsc extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('go'),
+        title: Text(context.tr(LangKeys.appName)),
         leading: Icon(Icons.account_balance),
       ),
       body: Column(
