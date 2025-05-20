@@ -25,9 +25,9 @@ class StoreApp extends StatelessWidget {
             localeResolutionCallback: AppLocalizationsSetup.localeResolutionCallback,
             localizationsDelegates: AppLocalizationsSetup.localizationsDelegates,
             debugShowCheckedModeBanner: false,
-            theme: appThemeLight(),
+            theme: appThemeDark(),
             onGenerateRoute: AppRoutes.onGenerateRoute,
-            initialRoute: AppRoutes.test,
+            initialRoute: AppRoutes.login,
           ),
         );
 

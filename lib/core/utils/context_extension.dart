@@ -12,7 +12,11 @@ extension ContextExt on BuildContext{
   ///color
   AppColor get color=>Theme.of(this).extension<AppColor>()!;
   ///assets
+  ///font
+  TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
+
   AppAssets get assets=>Theme.of(this).extension<AppAssets>()!;
+  ///navigation
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
    return Navigator.pushNamed(this, routeName, arguments: arguments);
   }
