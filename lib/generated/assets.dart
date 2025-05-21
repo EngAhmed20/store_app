@@ -19,6 +19,7 @@ class Assets {
   static const String customerBigNavBarLight = 'assets/images/customer/big_nav_bar_light.png';
   static const String customerHomeBgDark = 'assets/images/customer/home_bg_dark.png';
   static const String customerHomeBgLight = 'assets/images/customer/home_bg_light.png';
+  static const String customerProfilePic = 'assets/images/customer/profile_pic.png';
   static const String customerUser = 'assets/images/customer/user.png';
   static const String iconsAppIcon = 'assets/images/icons/app_icon.png';
   static const String iconsPlayStore512 = 'assets/images/icons/play_store_512.png';
