@@ -5,5 +5,6 @@ class PrefKeys{
   static const String ar= 'ar';
   static const String isLoggedIn = 'is_logged_in';
   static const String userId = 'user_id';
+  static const String accessToken = 'accessToken';
 
 }
