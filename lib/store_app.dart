@@ -32,7 +32,7 @@ class StoreApp extends StatelessWidget {
                         final cubit=context.read<AppCubit>();
                     return MaterialApp(
                       title: 'Store',
-                      locale: Locale('en'),
+                      locale: Locale(cubit.currentLangCode),
                       supportedLocales: AppLocalizationsSetup.supportedLocales,
                       localeResolutionCallback:
                           AppLocalizationsSetup.localeResolutionCallback,

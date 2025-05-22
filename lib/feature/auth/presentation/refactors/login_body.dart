@@ -23,7 +23,7 @@ class LoginBody extends StatelessWidget {
             ThemeAndLangButton(),
              SizedBox(height: 20.h,),
             AuthTitle(title: LangKeys.login,subtitle: LangKeys.welcome,),
-            SizedBox(height: 30.h,),
+            SizedBox(height: 35.h,),
             LoginTextForm(),
             SizedBox(height: 50.h,),
           ///login button

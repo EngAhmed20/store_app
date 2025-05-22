@@ -38,7 +38,7 @@ class ThemeAndLangButton extends StatelessWidget {
                 child: CustomLinearButton(
                     width: 70.w,
                     height: 40.h,
-                    onPressed: () {},
+                    onPressed: () {cubit.toggleLanguage();},
                     child: Text(
                       context.tr(LangKeys.appLanguage),
                       style: context.textStyle.copyWith(
