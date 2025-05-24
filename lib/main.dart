@@ -16,9 +16,10 @@ void main() async{
    options: DefaultFirebaseOptions.currentPlatform,
   );
   Bloc.observer = AppBlocObserver();
+
+  await SharedPref().instantiatePreferences();
   ///get it
   setup();
-  await SharedPref().instantiatePreferences();
   await EnvVariable.instance.init(envType: EnvTypeEnum.dev);
   await ConnectivityController.instance.init();
 
